@@ -9,3 +9,4 @@ The refactored solution applies SOLID principles, specifically focusing on the D
 Instead of specific borrow methods for each type, we introduced a `LibraryResource` interface. All resource types (`Book`, `Journal`, `AudioBook`, etc.) implement this interface. The `Student` class now depends entirely on the `LibraryResource` abstraction, utilizing a single `borrowResource(LibraryResource resource)` method. This ensures loose coupling, allowing new resource types to be added seamlessly without altering the core `Student` logic.
 
 ## UML Class Diagram
+<img src="https://github.com/albeetter/SOLID_DesignPattern/blob/main/ClassDiagramSOLIDDesign.png" alt="classdiagram">
